@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.Events;
 public class XRF_InteractionController : MonoBehaviour
 {
 
@@ -16,7 +16,9 @@ public class XRF_InteractionController : MonoBehaviour
         GrabAndReturn,
         GrabAndStay,
         TeleportController,
-        AudioPlayer
+        AudioPlayer,
+        MoveFromTo,
+        CallEvent
     };
 
     public InteractionType myType = InteractionType.AnimationController;  // this public var should appear as a drop down
@@ -49,6 +51,13 @@ public class XRF_InteractionController : MonoBehaviour
     public AudioSource theAudioSource;
     public AudioClip theAudioClip;
 
+    //move from to
+    public GameObject thingToMove;
+    public Transform transformPositionToMoveTo;
+
+
+    //call event
+    public UnityEvent EventToCall;
 
     private void Start()
     {
@@ -89,6 +98,12 @@ public class XRF_InteractionController : MonoBehaviour
             theAudioSource.playOnAwake = false;
             theAudioSource.loop = false;
             theAudioSource.Pause();
+        }
+        else if (myType == InteractionType.MoveFromTo)
+        {
+        }
+        else if (myType == InteractionType.CallEvent)
+        {
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -203,6 +218,18 @@ public class XRF_InteractionController : MonoBehaviour
             //need audio clip
             theAudioSource.clip = theAudioClip;
             theAudioSource.Play(0);
+        }
+
+        else if (myType == InteractionType.MoveFromTo)
+        {
+            thingToMove.transform.position = transformPositionToMoveTo.position;
+        }
+        else if (myType == InteractionType.CallEvent)
+        {
+            Debug.Log("im going to call this event");
+            EventToCall.Invoke();
+            Debug.Log("i called my event");
+
         }
     }
     void OnOff(bool bool1, bool bool2)

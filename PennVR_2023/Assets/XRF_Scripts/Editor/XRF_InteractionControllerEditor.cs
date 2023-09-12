@@ -1,6 +1,7 @@
 ﻿ using UnityEngine;
  using UnityEditor;
 using System.Linq;
+using UnityEditor.Events;
 
 [CustomEditor(typeof(XRF_InteractionController))]
 public class XRF_InteractionControllerEditor : Editor
@@ -101,6 +102,21 @@ public class XRF_InteractionControllerEditor : Editor
         {
             script.theAudioSource = (AudioSource)EditorGUILayout.ObjectField("Audio Source in Scene", script.theAudioSource, typeof(AudioSource), true);
             script.theAudioClip = (AudioClip)EditorGUILayout.ObjectField("Audio Clip in Project Folder", script.theAudioClip, typeof(AudioClip), true);
+
+
+        }
+        else if (script.myType == XRF_InteractionController.InteractionType.MoveFromTo)
+        {
+            script.thingToMove = (GameObject)EditorGUILayout.ObjectField("Object to Move to a new location on click", script.thingToMove, typeof(GameObject), true);
+            script.transformPositionToMoveTo = (Transform)EditorGUILayout.ObjectField("Location to move to", script.transformPositionToMoveTo, typeof(Transform), true);
+
+
+        }
+        else if (script.myType == XRF_InteractionController.InteractionType.CallEvent)
+        {
+            this.serializedObject.Update();
+            EditorGUILayout.PropertyField(this.serializedObject.FindProperty("EventToCall"), true);
+            this.serializedObject.ApplyModifiedProperties();
 
 
         }

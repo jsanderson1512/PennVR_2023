@@ -149,6 +149,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &49997548 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2441572017308094996, guid: d9399c18b9beb1c4eae970e1311bb14e, type: 3}
@@ -180,6 +185,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &135535660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,6 +216,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &209278107
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,7 +347,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!21 &302557417
 Material:
@@ -443,6 +458,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &671502011
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,6 +598,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &731990882
 GameObject:
   m_ObjectHideFlags: 0
@@ -856,6 +881,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &870266251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -882,6 +912,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &870266252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -908,6 +943,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &870266253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -934,6 +974,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &870266254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -960,6 +1005,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &928505753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -986,6 +1036,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1150790566 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7704488619719803848, guid: d9399c18b9beb1c4eae970e1311bb14e, type: 3}
@@ -1017,6 +1072,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1174009627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1043,6 +1103,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1181123325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1199,6 +1264,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1448326285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1225,84 +1295,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
---- !u!21 &1483226773
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Empty Material
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailAlbedoMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailMask:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailNormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ParallaxMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _BumpScale: 1
-    - _Cutoff: 0.5
-    - _DetailNormalMapScale: 1
-    - _DstBlend: 0
-    - _GlossMapScale: 1
-    - _Glossiness: 0.5
-    - _GlossyReflections: 1
-    - _Metallic: 0
-    - _Mode: 0
-    - _OcclusionStrength: 1
-    - _Parallax: 0.02
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _UVSec: 0
-    - _ZWrite: 1
-    m_Colors:
-    - _Color: {r: 1, g: 0, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-  m_BuildTextureStacks: []
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1493399495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1329,6 +1326,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1514125749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1389,6 +1391,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!21 &1689344218
 Material:
   serializedVersion: 8
@@ -1493,6 +1500,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2015071646
 GameObject:
   m_ObjectHideFlags: 0
@@ -1551,149 +1563,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
---- !u!1 &2086513177
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2086513182}
-  - component: {fileID: 2086513181}
-  - component: {fileID: 2086513180}
-  - component: {fileID: 2086513179}
-  - component: {fileID: 2086513178}
-  - component: {fileID: 2086513183}
-  m_Layer: 0
-  m_Name: Capsule
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2086513178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2086513177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6edd02d295a318248b954abd89a0577f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camToFollow: {fileID: 2168786790993354426}
-  objectFollowing: {fileID: 2086513177}
-  farDistanceTolerance: 0.5
-  closeDistanceTolerance: 0.2
-  speed: 0.02
---- !u!136 &2086513179
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2086513177}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &2086513180
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2086513177}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &2086513181
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2086513177}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &2086513182
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2086513177}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.6174603, y: 4.33791, z: -2.7737224}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2086513183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2086513177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cff4cac548e6c9d46a0469dfd5862180, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HighlightMaterial: {fileID: 1483226773}
-  myType: 6
-  ObjectWithAnimation: {fileID: 0}
-  isSelected: 0
-  isTeleporter: 0
-  SceneToLoad: 
-  NumberOfThingsToTurnON: 1
-  NumberOfThingsToTurnOFF: 1
-  StartOFFClickON: []
-  StartONClickOFF: []
-  originalPos: {x: 0, y: 0, z: 0}
-  isGrabbable: 0
-  theAudioSource: {fileID: 209278108}
-  theAudioClip: {fileID: 8300000, guid: 5ac6fe579e904064b92a0c15d2cc1222, type: 3}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &2095837730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1720,6 +1594,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &2168786790993354425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1777,65 +1656,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8561eccd91f399940b3663e52bc6cb00, type: 3}
---- !u!1 &2168786790993354426 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2168786789701128955, guid: 8561eccd91f399940b3663e52bc6cb00, type: 3}
-  m_PrefabInstance: {fileID: 2168786790993354425}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &4387309910773280715
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4387309909163264316, guid: 0563bfa10be6f9146a93237917389158, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4387309909163264316, guid: 0563bfa10be6f9146a93237917389158, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -8.93
-      objectReference: {fileID: 0}
-    - target: {fileID: 4387309909163264316, guid: 0563bfa10be6f9146a93237917389158, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.055
-      objectReference: {fileID: 0}
-    - target: {fileID: 4387309909163264316, guid: 0563bfa10be6f9146a93237917389158, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.735
-      objectReference: {fileID: 0}
-    - target: {fileID: 4387309909163264316, guid: 0563bfa10be6f9146a93237917389158, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.86003023
-      objectReference: {fileID: 0}
-    - target: {fileID: 4387309909163264316, guid: 0563bfa10be6f9146a93237917389158, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.10384413
-      objectReference: {fileID: 0}
-    - target: {fileID: 4387309909163264316, guid: 0563bfa10be6f9146a93237917389158, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.48457712
-      objectReference: {fileID: 0}
-    - target: {fileID: 4387309909163264316, guid: 0563bfa10be6f9146a93237917389158, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.121447146
-      objectReference: {fileID: 0}
-    - target: {fileID: 4387309909163264316, guid: 0563bfa10be6f9146a93237917389158, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 17.237
-      objectReference: {fileID: 0}
-    - target: {fileID: 4387309909163264316, guid: 0563bfa10be6f9146a93237917389158, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -57.81
-      objectReference: {fileID: 0}
-    - target: {fileID: 4387309909163264316, guid: 0563bfa10be6f9146a93237917389158, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 6.508
-      objectReference: {fileID: 0}
-    - target: {fileID: 4387309909163264318, guid: 0563bfa10be6f9146a93237917389158, type: 3}
-      propertyPath: m_Name
-      value: StainedGlassProjector
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0563bfa10be6f9146a93237917389158, type: 3}

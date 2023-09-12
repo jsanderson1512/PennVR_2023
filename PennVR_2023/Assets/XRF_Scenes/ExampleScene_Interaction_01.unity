@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1.72
+  m_AmbientIntensity: 1.47
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 7416536dbe0334cfd888dd1beb75a9fb, type: 2}
@@ -656,6 +656,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &673927484
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -962,6 +967,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!21 &1120551448
 Material:
   serializedVersion: 8
@@ -1106,6 +1116,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &1172658714
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1195,6 +1210,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1172658718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1221,6 +1241,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1172658719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1247,6 +1272,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 155842839}
   theAudioClip: {fileID: 8300000, guid: 5ac6fe579e904064b92a0c15d2cc1222, type: 3}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!21 &1193900894
 Material:
   serializedVersion: 8
@@ -1390,63 +1420,6 @@ ReflectionProbe:
   m_UseOcclusionCulling: 1
   m_Importance: 1
   m_CustomBakedTexture: {fileID: 0}
---- !u!1001 &1289926941
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4387309909163264316, guid: 0563bfa10be6f9146a93237917389158, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4387309909163264316, guid: 0563bfa10be6f9146a93237917389158, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.058
-      objectReference: {fileID: 0}
-    - target: {fileID: 4387309909163264316, guid: 0563bfa10be6f9146a93237917389158, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.966
-      objectReference: {fileID: 0}
-    - target: {fileID: 4387309909163264316, guid: 0563bfa10be6f9146a93237917389158, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 9.017
-      objectReference: {fileID: 0}
-    - target: {fileID: 4387309909163264316, guid: 0563bfa10be6f9146a93237917389158, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.8322172
-      objectReference: {fileID: 0}
-    - target: {fileID: 4387309909163264316, guid: 0563bfa10be6f9146a93237917389158, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.097234145
-      objectReference: {fileID: 0}
-    - target: {fileID: 4387309909163264316, guid: 0563bfa10be6f9146a93237917389158, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.5071881
-      objectReference: {fileID: 0}
-    - target: {fileID: 4387309909163264316, guid: 0563bfa10be6f9146a93237917389158, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.2017927
-      objectReference: {fileID: 0}
-    - target: {fileID: 4387309909163264316, guid: 0563bfa10be6f9146a93237917389158, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 21.502
-      objectReference: {fileID: 0}
-    - target: {fileID: 4387309909163264316, guid: 0563bfa10be6f9146a93237917389158, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -59.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4387309909163264316, guid: 0563bfa10be6f9146a93237917389158, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 14.773
-      objectReference: {fileID: 0}
-    - target: {fileID: 4387309909163264318, guid: 0563bfa10be6f9146a93237917389158, type: 3}
-      propertyPath: m_Name
-      value: StainedGlassProjector
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0563bfa10be6f9146a93237917389158, type: 3}
 --- !u!1 &1312548628
 GameObject:
   m_ObjectHideFlags: 0
@@ -1705,6 +1678,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &1752119359
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2193,6 +2171,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2015071646
 GameObject:
   m_ObjectHideFlags: 0
@@ -2289,6 +2272,11 @@ MonoBehaviour:
   isGrabbable: 0
   theAudioSource: {fileID: 0}
   theAudioClip: {fileID: 0}
+  thingToMove: {fileID: 0}
+  transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &2107382321
 BoxCollider:
   m_ObjectHideFlags: 0
