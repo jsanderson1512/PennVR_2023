@@ -321,6 +321,9 @@ MonoBehaviour:
   theAudioClip: {fileID: 0}
   thingToMove: {fileID: 0}
   transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &481491003
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -675,6 +678,9 @@ MonoBehaviour:
   theAudioClip: {fileID: 0}
   thingToMove: {fileID: 0}
   transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!64 &805891664
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -888,6 +894,9 @@ MonoBehaviour:
   theAudioClip: {fileID: 0}
   thingToMove: {fileID: 0}
   transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &996608014
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1453,6 +1462,9 @@ MonoBehaviour:
   theAudioClip: {fileID: 0}
   thingToMove: {fileID: 0}
   transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &1283378449
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1679,6 +1691,9 @@ MonoBehaviour:
   theAudioClip: {fileID: 0}
   thingToMove: {fileID: 0}
   transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!64 &1339730902
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1808,6 +1823,9 @@ MonoBehaviour:
   theAudioClip: {fileID: 0}
   thingToMove: {fileID: 0}
   transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &1340757696
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2394,6 +2412,9 @@ MonoBehaviour:
   theAudioClip: {fileID: 0}
   thingToMove: {fileID: 0}
   transformPositionToMoveTo: {fileID: 0}
+  EventToCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &1857158780
 BoxCollider:
   m_ObjectHideFlags: 0
