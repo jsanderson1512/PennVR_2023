@@ -120,5 +120,11 @@ public class XRF_InteractionControllerEditor : Editor
 
 
         }
+        else if (script.myType == XRF_InteractionController.InteractionType.MakeObjectChild)
+        {
+            script.thingToChange = (GameObject)EditorGUILayout.ObjectField("child object", script.thingToChange, typeof(GameObject), true);
+            script.newParentObject = (GameObject)EditorGUILayout.ObjectField("new parent object", script.newParentObject, typeof(GameObject), true);
+
+        }
     }
 }

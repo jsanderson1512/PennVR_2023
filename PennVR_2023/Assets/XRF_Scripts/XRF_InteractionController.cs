@@ -18,7 +18,9 @@ public class XRF_InteractionController : MonoBehaviour
         TeleportController,
         AudioPlayer,
         MoveFromTo,
-        CallEvent
+        CallEvent,
+        GrabAttachToHand,
+        MakeObjectChild
     };
 
     public InteractionType myType = InteractionType.AnimationController;  // this public var should appear as a drop down
@@ -46,6 +48,7 @@ public class XRF_InteractionController : MonoBehaviour
     //grab stuff
     public Vector3 originalPos = Vector3.zero;
     public bool isGrabbable;
+    public bool handGrab;
 
     //audio stuff
     public AudioSource theAudioSource;
@@ -58,6 +61,10 @@ public class XRF_InteractionController : MonoBehaviour
 
     //call event
     public UnityEvent EventToCall;
+
+    //make object child
+    public GameObject thingToChange;
+    public GameObject newParentObject;
 
     private void Start()
     {
@@ -104,6 +111,15 @@ public class XRF_InteractionController : MonoBehaviour
         }
         else if (myType == InteractionType.CallEvent)
         {
+        }
+        else if (myType == InteractionType.GrabAttachToHand)
+        {
+            originalPos = gameObject.transform.position;
+            handGrab = true;
+        }
+        else if (myType == InteractionType.MakeObjectChild)
+        {
+            
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -216,8 +232,15 @@ public class XRF_InteractionController : MonoBehaviour
 
             //need audio source
             //need audio clip
-            theAudioSource.clip = theAudioClip;
-            theAudioSource.Play(0);
+            if (theAudioSource.isPlaying && theAudioSource.clip == theAudioClip)
+            {
+                theAudioSource.Stop();
+            }
+            else
+            {
+                theAudioSource.clip = theAudioClip;
+                theAudioSource.Play(0);
+            }
         }
 
         else if (myType == InteractionType.MoveFromTo)
@@ -230,6 +253,16 @@ public class XRF_InteractionController : MonoBehaviour
             EventToCall.Invoke();
             Debug.Log("i called my event");
 
+        }
+        else if (myType == InteractionType.GrabAttachToHand)
+        {
+            //make it a child of your hand... when you let go, let it go
+            //movement handled in vr conroller raycast interactions .cs
+
+        }
+        else if (myType == InteractionType.MakeObjectChild)
+        {
+            thingToChange.transform.parent = newParentObject.transform;
         }
     }
     void OnOff(bool bool1, bool bool2)

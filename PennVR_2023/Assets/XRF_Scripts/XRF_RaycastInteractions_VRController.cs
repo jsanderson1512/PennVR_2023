@@ -27,7 +27,9 @@ public class XRF_RaycastInteractions_VRController : MonoBehaviour
     private Vector3 endPoint;
     private bool iGrabbedYou;
     private bool grabable;
+    private bool handGrab;
     private GameObject grabbedObject;
+    private GameObject handGrabParent;
     private float moveLength;
     private float tempDistance;
     private Vector3 basePosObject;
@@ -104,6 +106,7 @@ public class XRF_RaycastInteractions_VRController : MonoBehaviour
                         Clickable = false;
                         feetIcon.SetActive(false);
                         Teleportable = false;
+                        handGrab = false;
                         Debug.Log("hey i hit a grabbable");
 
                         if (iGrabbedYou)
@@ -118,6 +121,28 @@ public class XRF_RaycastInteractions_VRController : MonoBehaviour
                             grabable = true;
                         }
                     }
+                    else if(hitObject.GetComponent<XRF_InteractionController>().handGrab)
+                    {
+                        tempDistance = Vector3.Distance(origin, myRayHit.point);
+                        RayHit(hitObject);
+                        Clickable = false;
+                        feetIcon.SetActive(false);
+                        Teleportable = false;
+                        grabable = false;
+                        Debug.Log("hey i hit a grabbable");
+
+                        if (iGrabbedYou)
+                        {
+                            Debug.Log("hey i grabbed is true");
+                            //Vector3 grabEndPoint = origin + direction * moveLength;
+                            //Vector3 movePosition = basePosObject + (grabEndPoint - clickOrigin);
+                            //grabbedObject.transform.position = movePosition;
+                        }
+                        else
+                        {
+                            handGrab = true;
+                        }
+                    }
                     else
                     {
                         RayHit(hitObject);
@@ -125,6 +150,7 @@ public class XRF_RaycastInteractions_VRController : MonoBehaviour
                         feetIcon.SetActive(false);
                         Teleportable = false;
                         grabable = false;
+                        handGrab = false;
                     }
                 }
                 else
@@ -134,6 +160,7 @@ public class XRF_RaycastInteractions_VRController : MonoBehaviour
                     feetIcon.SetActive(false);
                     Teleportable = false;
                     grabable = false;
+                    handGrab = false;
                 }
             }
             else
@@ -143,6 +170,7 @@ public class XRF_RaycastInteractions_VRController : MonoBehaviour
                 feetIcon.SetActive(false);
                 Teleportable = false;
                 grabable = false;
+                handGrab = false;
             }
 
             pointerPrefab.transform.position = endPoint;
@@ -349,6 +377,15 @@ public class XRF_RaycastInteractions_VRController : MonoBehaviour
             clickOrigin = endPoint;
 
         }
+        else if (handGrab)
+        {
+            //make this a child of the hand...
+            iGrabbedYou = true;
+            grabbedObject = hitObject;
+            handGrabParent = hitObject.transform.parent.gameObject;
+            basePosObject = grabbedObject.transform.position;
+            grabbedObject.transform.SetParent(controllerGameObject.transform);
+        }
         else if (Teleportable)
         {
             cameraRig.transform.position = new Vector3(endPoint.x + (cameraRig.transform.position.x - cameraEye.transform.position.x), endPoint.y, endPoint.z + (cameraRig.transform.position.z - cameraEye.transform.position.z));
@@ -381,7 +418,12 @@ public class XRF_RaycastInteractions_VRController : MonoBehaviour
             {
                 grabbedObject.transform.position = grabbedObject.GetComponent<XRF_InteractionController>().originalPos;
             }
-
+            if(handGrab)
+            {
+                grabbedObject.transform.SetParent(handGrabParent.transform);
+                grabbedObject.transform.position = grabbedObject.GetComponent<XRF_InteractionController>().originalPos;
+            }
+            handGrab = false;
             iGrabbedYou = false;
             grabbedObject = null;
             RayMissed();//clear everything after you let go
